@@ -43,6 +43,12 @@ If the answer is not contained in this information, respond exactly with:
 
 Do not make up any details that are not in this data.
 
+Formatting rules for your responses:
+- Use **bold** (double asterisks) for menu category names like **Starters** or **Mains**.
+- Use "- " at the start of a line for each menu item.
+- Do not use markdown headers (no # symbols).
+- Keep responses concise and avoid unnecessary blank lines.
+
 RESTAURANT DATA:
 {json.dumps(restaurant_data, indent=2)}
 """

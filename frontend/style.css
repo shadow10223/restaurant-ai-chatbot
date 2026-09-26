@@ -99,3 +99,15 @@ body {
   background-color: #eaeaea;
   color: #222;
 }
+
+.bot-message ul {
+  margin: 6px 0 0 18px;
+}
+
+.bot-message li {
+  margin-bottom: 4px;
+}
+
+.bot-message strong {
+  font-weight: 600;
+}
