@@ -1,0 +1,66 @@
+{
+  "restaurant_name": "Basil & Ember",
+  "concept": "Casual-upscale Mediterranean-Italian fusion restaurant with wood-fired dishes and a warm neighborhood vibe.",
+  "address": "214 Maple Street, Springfield",
+  "hours": {
+    "monday": "11:00 AM - 9:00 PM",
+    "tuesday": "11:00 AM - 9:00 PM",
+    "wednesday": "11:00 AM - 9:00 PM",
+    "thursday": "11:00 AM - 9:00 PM",
+    "friday": "11:00 AM - 10:00 PM",
+    "saturday": "11:00 AM - 10:00 PM",
+    "sunday": "12:00 PM - 8:00 PM"
+  },
+  "menu": {
+    "starters": [
+      { "name": "Hummus & Charred Pita", "price": 8, "vegetarian": true },
+      { "name": "Grilled Halloumi", "price": 10, "vegetarian": true },
+      { "name": "Bruschetta Trio", "price": 9, "vegetarian": true }
+    ],
+    "mains": [
+      { "name": "Wood-Fired Margherita Pizza", "price": 14, "vegetarian": true },
+      { "name": "Lemon Herb Roast Chicken", "price": 18, "vegetarian": false },
+      { "name": "Lamb Kofta Plate", "price": 19, "vegetarian": false },
+      { "name": "Mushroom Risotto", "price": 16, "vegetarian": true }
+    ],
+    "desserts": [
+      { "name": "Baklava Cheesecake", "price": 7, "vegetarian": true },
+      { "name": "Affogato", "price": 6, "vegetarian": true }
+    ],
+    "drinks": [
+      { "name": "Soft Drinks", "price": 3 },
+      { "name": "Coffee", "price": 4 },
+      { "name": "Tea", "price": 3 },
+      { "name": "House Wine (glass)", "price": 9 },
+      { "name": "Local Beer", "price": 6 }
+    ]
+  },
+  "delivery": {
+    "available": true,
+    "radius_miles": 5,
+    "fee_usd": 3.99,
+    "estimated_time_minutes": "30-45",
+    "provider": "In-house delivery drivers (no third-party apps)"
+  },
+  "reservations": {
+    "accepted": true,
+    "max_party_size": 8,
+    "how_to_book": "Call the restaurant directly or use the online reservation form on the website.",
+    "note": "This demo chatbot cannot make real reservations — it only explains the process."
+  },
+  "payment_methods": ["Credit/Debit Card", "Apple Pay", "Google Pay", "Cash (in-person only, not available for delivery)"],
+  "faq": [
+    {
+      "question": "Do you have gluten-free options?",
+      "answer": "We have limited gluten-free options. Please ask our staff for current gluten-free availability."
+    },
+    {
+      "question": "Is there parking available?",
+      "answer": "Yes, there is a small parking lot behind the building, and street parking is also available."
+    },
+    {
+      "question": "Do you accommodate large groups?",
+      "answer": "Yes, groups larger than 8 are welcome with advance notice."
+    }
+  ]
+}
