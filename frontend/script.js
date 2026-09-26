@@ -93,3 +93,40 @@ chatForm.addEventListener('submit', async function (event) {
     console.error('Error fetching bot reply:', error);
   }
 });
+
+// Suggested questions shown as clickable buttons
+const suggestedQuestions = [
+  "What's on the menu?",
+  "What are your hours?",
+  "Do you deliver?"
+];
+
+// Adds clickable suggestion buttons to the chat window
+function showSuggestions() {
+  const suggestionsDiv = document.createElement('div');
+  suggestionsDiv.classList.add('suggestions');
+
+  suggestedQuestions.forEach(function (question) {
+    const button = document.createElement('button');
+    button.classList.add('suggestion-btn');
+    button.textContent = question;
+    button.addEventListener('click', function () {
+      userInput.value = question;
+      chatForm.requestSubmit(); // triggers the same submit logic as pressing Enter
+      suggestionsDiv.remove(); // remove suggestions after one is used
+    });
+    suggestionsDiv.appendChild(button);
+  });
+
+  chatMessages.appendChild(suggestionsDiv);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+// Runs once, when the page finishes loading
+window.addEventListener('DOMContentLoaded', function () {
+  addMessage(
+    "Hi! I'm the Basil & Ember AI assistant. Ask me about our menu, hours, delivery, or reservations — I'll answer using our restaurant's real information.",
+    'bot'
+  );
+  showSuggestions();
+});

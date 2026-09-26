@@ -111,3 +111,26 @@ body {
 .bot-message strong {
   font-weight: 600;
 }
+
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.suggestion-btn {
+  background-color: white;
+  border: 1px solid #2c3e50;
+  color: #2c3e50;
+  padding: 8px 14px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.suggestion-btn:hover {
+  background-color: #2c3e50;
+  color: white;
+}
